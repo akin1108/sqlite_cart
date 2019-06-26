@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="First name"
+        android:gravity="center"
+        android:id="@+id/firstName_et"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="Last Name"
+        android:gravity="center"
+        android:id="@+id/lastName_et"/>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Insert"
+        android:id="@+id/insert_button"
+        android:layout_marginTop="10dp"
+        android:onClick="btn_click"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Update"
+        android:id="@+id/update_button"
+        android:layout_marginTop="10dp"
+        android:onClick="btn_click"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Delete"
+        android:id="@+id/delete_button"
+        android:layout_marginTop="10dp"
+        android:onClick="btn_click"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Read"
+        android:id="@+id/read_button"
+        android:layout_marginTop="10dp"
+        android:onClick="btn_click"/>
+
+ <TextView
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:text="RESULT"
+     android:layout_margin="10dp"
+     android:padding="10dp"
+     android:id="@+id/result_tv"
+     android:layout_gravity="center"/>
+
+
+</LinearLayout>
