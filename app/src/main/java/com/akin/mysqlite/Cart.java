@@ -7,6 +7,7 @@ import android.support.v7.widget.RecyclerView;
 
 import com.akin.mysqlite.adapter.CartAdapter;
 import com.akin.mysqlite.model.CartModel;
+import com.akin.mysqlite.model.Student;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -27,7 +28,10 @@ public class Cart extends AppCompatActivity {
 
         // Get added products data
         // for(){cartModels.add();}
-        CartAdapter cartAdapter = new CartAdapter(this, cartModels);
+
+        Bundle args = getIntent().getBundleExtra("cartList");
+        ArrayList<Student> cartList = (ArrayList<Student>) args.getSerializable("ARRAYLIST");
+        CartAdapter cartAdapter = new CartAdapter(this, cartList);
         recycler_View.setAdapter(cartAdapter);
     }
 }
